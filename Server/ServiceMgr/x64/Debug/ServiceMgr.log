@@ -1,3 +1,0 @@
-﻿  UVLoop.cpp
-d:\mygameserver\servicemgr\uvloop\uvloop.cpp(48): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-  ServiceMgr.vcxproj -> D:\MyGameServer\x64\Debug\ServiceMgrd.lib
