@@ -1,0 +1,41 @@
+﻿  Codec.cpp
+d:\mygameserver\gameservice\codec\packet.h(5): fatal error C1083: 无法打开包括文件: “Utils/Define.h”: No such file or directory
+  FileDB.cpp
+d:\mygameserver\gameservice\filedb\filedb.h(8): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  PlayerDataConvert.cpp
+d:\mygameserver\gameservice\filedb\playerdataconvert.h(3): fatal error C1083: 无法打开包括文件: “Utils/Define.h”: No such file or directory
+  PlayerSaveData.cpp
+d:\mygameserver\gameservice\filedb\playersavedata.h(5): fatal error C1083: 无法打开包括文件: “DataStruct/PlayerData.h”: No such file or directory
+  main.cpp
+d:\mygameserver\gameservice\main.cpp(1): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  LoginMgr.cpp
+d:\mygameserver\gameservice\loginmgr\loginmgr.h(5): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  ClientInfo.cpp
+d:\mygameserver\gameservice\netmgr\clientinfo.h(6): fatal error C1083: 无法打开包括文件: “Utils/Define.h”: No such file or directory
+  NetMgr.cpp
+d:\mygameserver\gameservice\netmgr\netmgr.h(4): fatal error C1083: 无法打开包括文件: “google/protobuf/message.h”: No such file or directory
+  NetPackDispatcher.cpp
+d:\mygameserver\gameservice\netpackdispatcher\netpackdispatcher.h(6): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  player.pb.cc
+d:\mygameserver\gameservice\proto\player.pb.h(9): fatal error C1083: 无法打开包括文件: “google/protobuf/stubs/common.h”: No such file or directory
+  Role.cpp
+d:\mygameserver\gameservice\rolemgr\role.h(3): fatal error C1083: 无法打开包括文件: “google/protobuf/message.h”: No such file or directory
+  RoleMgr.cpp
+d:\mygameserver\gameservice\rolemgr\rolemgr.h(6): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  SceneRole.cpp
+d:\mygameserver\gameservice\rolemgr\scenerole.h(3): fatal error C1083: 无法打开包括文件: “google/protobuf/message.h”: No such file or directory
+  Cube.cpp
+d:\mygameserver\gameservice\scenemgr\cube.h(3): fatal error C1083: 无法打开包括文件: “DataStruct/PlayerData.h”: No such file or directory
+  Scene.cpp
+d:\mygameserver\gameservice\scenemgr\scene.h(5): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  SceneMgr.cpp
+d:\mygameserver\gameservice\scenemgr\scenemgr.h(3): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  ShopMgr.cpp
+d:\mygameserver\gameservice\shopmgr\shopmgr.h(6): fatal error C1083: 无法打开包括文件: “ServiceMgr.h”: No such file or directory
+  TimeStampConvert.cpp
+d:\mygameserver\gameservice\utils\timestampconvert.cpp(12): error C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: 参见“sscanf”的声明
+d:\mygameserver\gameservice\utils\timestampconvert.cpp(37): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(506): note: 参见“localtime”的声明
+d:\mygameserver\gameservice\utils\timestampconvert.cpp(38): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明

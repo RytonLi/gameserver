@@ -1,0 +1,192 @@
+﻿  fs-poll.c
+d:\uv\uv\src\fs-poll.c(200): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\fs-poll.c(203): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+  idna.c
+d:\uv\uv\src\idna.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\uv\uv\src\idna.c(314): warning C4244: “return”: 从“__int64”转换到“long”，可能丢失数据
+  inet.c
+d:\uv\uv\src\inet.c(160): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\uv\uv\src\inet.c(187): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+d:\uv\uv\src\inet.c(283): warning C4244: “初始化”: 从“__int64”转换到“const int”，可能丢失数据
+  random.c
+  strscpy.c
+  strtok.c
+  threadpool.c
+d:\uv\uv\src\threadpool.c(200): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(1191): note: 参见“getenv”的声明
+  timer.c
+  uv-common.c
+d:\uv\uv\src\uv-common.c(682): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+  uv-data-getter-setters.c
+  version.c
+  async.c
+  core.c
+d:\uv\uv\src\win\core.c(462): warning C4244: “=”: 从“uint64_t”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\core.c(548): warning C4244: “=”: 从“uint64_t”转换到“DWORD”，可能丢失数据
+  detect-wakeup.c
+  dl.c
+  error.c
+  fs-event.c
+d:\uv\uv\src\win\fs-event.c(79): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\fs-event.c(117): warning C4996: 'wcsdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _wcsdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(580): note: 参见“wcsdup”的声明
+d:\uv\uv\src\win\fs-event.c(124): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\fs-event.c(132): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\fs-event.c(483): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs-event.c(490): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstdio.h(1667): note: 参见“_snwprintf”的声明
+  fs.c
+d:\uv\uv\src\win\fs.c(106): warning C4244: “+=”: 从“double”转换到“long”，可能丢失数据
+d:\uv\uv\src\win\fs.c(210): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(224): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(421): warning C4267: “=”: 从“size_t”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\fs.c(478): warning C4996: 'umask': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _umask. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_io.h(548): note: 参见“umask”的声明
+d:\uv\uv\src\win\fs.c(479): warning C4996: 'umask': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _umask. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_io.h(548): note: 参见“umask”的声明
+d:\uv\uv\src\win\fs.c(1278): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(1015): note: 参见“wcstombs”的声明
+d:\uv\uv\src\win\fs.c(1461): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(1493): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(1495): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(1615): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstdio.h(1667): note: 参见“_snwprintf”的声明
+d:\uv\uv\src\win\fs.c(2180): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2330): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2331): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2450): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2507): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2508): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2536): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2537): warning C4267: “=”: 从“size_t”转换到“USHORT”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2485): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\fs.c(2806): warning C4267: “函数”: 从“size_t”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2955): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2960): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(2967): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3000): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3033): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3045): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3048): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3060): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3064): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3078): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3081): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3095): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3098): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3109): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3112): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3124): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3128): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3141): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3143): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3160): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3173): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3184): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3187): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3199): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3203): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3215): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3218): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3236): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3239): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3251): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3254): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3261): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3273): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3276): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3287): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3290): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3301): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3304): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3311): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3323): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3326): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3333): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3340): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3349): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3373): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3377): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3387): warning C4267: “=”: 从“size_t”转换到“ULONG”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3388): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3403): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3407): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3419): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3423): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3432): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3444): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3449): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3459): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3470): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3475): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3489): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\fs.c(3492): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+  getaddrinfo.c
+d:\uv\uv\src\win\getaddrinfo.c(132): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\getaddrinfo.c(434): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+  getnameinfo.c
+  正在编译...
+  handle.c
+  loop-watcher.c
+  pipe.c
+d:\uv\uv\src\win\pipe.c(194): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_io.h(459): note: 参见“close”的声明
+d:\uv\uv\src\win\pipe.c(1270): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\pipe.c(1289): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\pipe.c(2468): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\uv\uv\src\win\pipe.c(2594): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+  poll.c
+  process-stdio.c
+  process.c
+d:\uv\uv\src\win\process.c(204): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\process.c(214): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\process.c(224): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\process.c(235): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\process.c(470): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\process.c(481): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(205): note: 参见“wcsncpy”的声明
+d:\uv\uv\src\win\process.c(522): warning C4996: 'wcsrev': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _wcsrev. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(614): note: 参见“wcsrev”的声明
+d:\uv\uv\src\win\process.c(596): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\uv\uv\src\win\process.c(635): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\process.c(755): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\process.c(791): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\process.c(798): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\uv\uv\src\win\process.c(810): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  signal.c
+  snprintf.c
+  stream.c
+  tcp.c
+d:\uv\uv\src\win\tcp.c(354): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\tcp.c(373): warning C4244: “函数”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
+  thread.c
+d:\uv\uv\src\win\thread.c(207): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+d:\uv\uv\src\win\thread.c(208): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+  tty.c
+d:\uv\uv\src\win\tty.c(981): warning C4244: “初始化”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\tty.c(2219): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\tty.c(2255): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_io.h(459): note: 参见“close”的声明
+  udp.c
+  util.c
+d:\uv\uv\src\win\util.c(622): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstdio.h(1667): note: 参见“_snwprintf”的声明
+d:\uv\uv\src\win\util.c(1044): warning C4267: “函数”: 从“size_t”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\util.c(1077): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\util.c(1379): warning C4267: “=”: 从“size_t”转换到“DWORD”，可能丢失数据
+d:\uv\uv\src\win\util.c(1417): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\uv\uv\src\win\util.c(1652): warning C4996: 'GetVersionExW': 被声明为已否决
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\sysinfoapi.h(387): note: 参见“GetVersionExW”的声明
+d:\uv\uv\src\win\util.c(1823): warning C4267: “函数”: 从“size_t”转换到“ULONG”，可能丢失数据
+  winapi.c
+  winsock.c
+  uv.vcxproj -> D:\uv\x64\Release\uv.lib

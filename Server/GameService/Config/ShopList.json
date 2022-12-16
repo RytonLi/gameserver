@@ -1,0 +1,44 @@
+{
+    "shopItems": [
+        {
+            "id": 1,
+            "price": 1,
+            "personalLimit": -1,
+            "globalLimit": -1,
+            "startTime": "",
+            "endTime": ""
+        },
+        {
+            "id": 2,
+            "price": 500,
+            "personalLimit": -1,
+            "globalLimit": -1,
+            "startTime": "",
+            "endTime": ""
+        },
+        {
+            "id": 3,
+            "price": 200,
+            "personalLimit": 3,
+            "globalLimit": -1,
+            "startTime": "",
+            "endTime": ""
+        },
+        {
+            "id": 4,
+            "price": 1000,
+            "personalLimit": -1,
+            "globalLimit": 50,
+            "startTime": "",
+            "endTime": ""
+        },
+        {
+            "id": 5,
+            "price": 300,
+            "personalLimit": -1,
+            "globalLimit": -1,
+            "startTime": "2022/12/7",
+            "endTime": "2022/12/10"
+        }
+    ]
+}

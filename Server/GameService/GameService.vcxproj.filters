@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cJSON">
+      <UniqueIdentifier>{a06bb30e-22e8-4e05-ae68-15c1626f15df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Codec">
+      <UniqueIdentifier>{bb936fd1-8848-47d7-aa4d-abf51351a59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStruct">
+      <UniqueIdentifier>{1eaf4827-d8bb-4546-b94c-7ce63290b733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileDB">
+      <UniqueIdentifier>{fa625501-a627-4ab6-b2f7-8a04eb4e5174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoginMgr">
+      <UniqueIdentifier>{cbc9cf6c-030b-4aa7-8067-3492b6864de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetMgr">
+      <UniqueIdentifier>{2020443b-acd4-45ed-b1d8-c81d2482ebb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetPackDispatcher">
+      <UniqueIdentifier>{9933ccdb-d0dc-450c-ba97-c3df969726b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proto">
+      <UniqueIdentifier>{ef6d3799-3d5e-4c0a-9918-8db5f7808dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneMgr">
+      <UniqueIdentifier>{e1d0c791-afbd-42ff-b789-efcd1b4dcdab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShopMgr">
+      <UniqueIdentifier>{14330c17-a52e-4692-9815-39e45e819941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{0792ae91-6336-427e-8664-197c4b691ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RoleMgr">
+      <UniqueIdentifier>{6a22c1ad-bab4-48dc-8557-c005af3e06f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cJSON\cJSON.c">
+      <Filter>cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="Codec\Codec.cpp">
+      <Filter>Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDB\PlayerDataConvert.cpp">
+      <Filter>FileDB</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDB\PlayerSaveData.cpp">
+      <Filter>FileDB</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginMgr\LoginMgr.cpp">
+      <Filter>LoginMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="NetMgr\ClientInfo.cpp">
+      <Filter>NetMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="NetMgr\NetMgr.cpp">
+      <Filter>NetMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="NetPackDispatcher\NetPackDispatcher.cpp">
+      <Filter>NetPackDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopMgr\ShopMgr.cpp">
+      <Filter>ShopMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utils\TimeStampConvert.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr\AOI.cpp">
+      <Filter>SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr\Grid.cpp">
+      <Filter>SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr\Scene.cpp">
+      <Filter>SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr\SceneMgr.cpp">
+      <Filter>SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr\Cube.cpp">
+      <Filter>SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="RoleMgr\RoleMgr.cpp">
+      <Filter>RoleMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="RoleMgr\Role.cpp">
+      <Filter>RoleMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr\SceneRole.cpp">
+      <Filter>SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDB\FileDB.cpp">
+      <Filter>FileDB</Filter>
+    </ClCompile>
+    <ClCompile Include="Proto\player.pb.cc">
+      <Filter>Proto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cJSON\cJSON.h">
+      <Filter>cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="Codec\Codec.h">
+      <Filter>Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="Codec\Packet.h">
+      <Filter>Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStruct\PlayerData.h">
+      <Filter>DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDB\FileDB.h">
+      <Filter>FileDB</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDB\PlayerDataConvert.h">
+      <Filter>FileDB</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDB\PlayerSaveData.h">
+      <Filter>FileDB</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginMgr\LoginMgr.h">
+      <Filter>LoginMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginMgr\LoginPlayerInfo.h">
+      <Filter>LoginMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="NetMgr\ClientInfo.h">
+      <Filter>NetMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="NetMgr\NetMgr.h">
+      <Filter>NetMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="NetPackDispatcher\NetPackDispatcher.h">
+      <Filter>NetPackDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopMgr\ShopItem.h">
+      <Filter>ShopMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopMgr\ShopMgr.h">
+      <Filter>ShopMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Define.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TimeStampConvert.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\AOI.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\Grid.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\Scene.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\SceneMgr.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\Cube.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\SceneConfig.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RoleMgr\RoleMgr.h">
+      <Filter>RoleMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="RoleMgr\Role.h">
+      <Filter>RoleMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\Entity.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr\SceneRole.h">
+      <Filter>SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Proto\player.pb.h">
+      <Filter>Proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Proto\player.proto">
+      <Filter>Proto</Filter>
+    </None>
+  </ItemGroup>
+</Project>

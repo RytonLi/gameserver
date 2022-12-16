@@ -1,0 +1,249 @@
+syntax = "proto3";
+
+package TCCamp;
+
+enum CLIENT_CMD {
+    CLIENT_CMD_INVALID = 0;
+    CLIENT_PING = 30001;
+
+	CLIENT_LOGIN_REQ = 30101;
+	CLIENT_CREATE_REQ = 30102;
+
+	CLIENT_CREATE_ROLE_REQ = 30201;
+	CLIENT_GET_ROLELIST_REQ = 30202;
+	CLIENT_GET_ROLEDATA_REQ = 30203;		//登录成功后 请求角色数据
+
+	CLIENT_UPDATE_MONEY_REQ = 30301;
+	CLIENT_UPDATE_BAGLIST_REQ = 30302;
+	CLIENT_UPDATE_SHOPLIST_REQ = 30303;
+
+	CLIENT_ROLE_BUY_ITEM_REQ = 30401;
+
+	CLIENT_ROLE_MOVE_SYNC_REQ = 30501;
+	CLIENT_ENTER_SCENE_REQ = 30502;
+	CLIENT_EXIT_SCENE_REQ = 30503;
+}
+
+enum SERVER_CMD {
+    SERVER_CMD_INVALID = 0;
+    SERVER_PONG = 10001;
+
+	SERVER_LOGIN_RSP = 10101;
+	SERVER_CREATE_RSP = 10102;
+
+	SERVER_CREATE_ROLE_RSP = 10201;
+	SERVER_GET_ROLELIST_RSP = 10202;
+	SERVER_GET_ROLEDATA_RSP = 10203;
+	
+	SERVER_UPDATE_MONEY_RSP = 10301;
+	SERVER_UPDATE_BAGLIST_RSP = 10302;
+	SERVER_UPDATE_SHOPLIST_RSP = 10303;
+
+	SERVER_ROLE_BUY_ITEM_RSP = 10401;
+
+	SERVER_ROLE_MOVE_SYNC_RSP = 10501;
+	SERVER_ENTER_SCENE_RSP = 10502;
+	SERVER_EXIT_SCENE_RSP = 10503;
+
+	SERVER_ROLE_MOVE_SYNC_ANNOUNCE = 11000;	//玩家同步到其他客户端(广播)
+	SERVER_ROLE_EXIT_SCENE_ANNOUNCE = 11001;
+}
+
+enum PB_RESULT_CODE {
+	SUCCESS = 0;
+
+	// 登录
+	LOGIN_PASSWORD_ERROR = 200;
+	LOGIN_ACCOUNT_NOT_EXIST = 201;
+	LOGIN_ACCOUNT_ONLINE = 202;
+
+	// 创建账号
+	CREATE_ACCOUNT_EXIST = 300;
+
+	// 获取玩家数据
+	CREATE_ROLE_COUNT_MAX = 400;
+	GET_ROLEDATA_ROLE_NOT_EXIST = 401;
+
+	// 金钱
+	MONEY_UPDATA_ERROR = 500;
+
+	// 商店
+	SHOP_UPDATA_ERROR = 600;
+	SHOP_BUY_ITEM_NOT_EXIST = 601;
+	SHOP_BUY_ITEM_GLOBAL_SHORTAGE = 602;
+	SHOP_BUY_ITEM_PERSONAL_SHORTAGE = 603;
+	SHOP_BUY_MONEY_SHORTAGE = 604;
+	SHOP_BUY_TIME_INVALID = 605;
+
+	// 背包
+	BAG_UPDATA_ERROR = 700;
+
+	// 位置
+	SYNC_POS_STATUS_INVALID = 800;
+	
+	SERVER_ERROR = 40000;
+}
+
+message ClientPingReq{
+	int64 Timestamp = 1;
+}
+
+message ServerPongRsp{
+    PB_RESULT_CODE Result = 1;
+	int64 Timestamp = 2;
+}
+
+//---------------登录模块--------------------------
+
+message AccountLoginReq {
+	string AccountID = 1;
+	string Password = 2;
+}
+
+message AccountLoginRsp {
+	PB_RESULT_CODE Result = 1;
+}
+
+message AccountCreateReq {
+	string accountID = 1;
+	string Password = 2;
+}
+
+message AccountCreateRsp {
+	PB_RESULT_CODE Result = 1;
+}
+
+//------------请求角色数据--------------
+message PBPosition {
+	double X = 1;
+	double Y = 2;
+}
+
+message PBRotation{
+	double X = 1;
+	double Y = 2;
+}
+
+message PBRoleStatus{
+	PBRotation Rot = 1;
+	int32 Speed = 2;
+	PBPosition Pos = 3;
+}
+
+message PBBagItem{
+	int32 Id = 1;
+	int32 Num = 2;
+}
+
+message PBRoleData {
+	int32 RoleID = 1;
+	int32 SceneId = 2;
+	int32 Money = 3;
+	PBRoleStatus Status = 4;
+	repeated PBBagItem Items = 5;
+}
+
+message RoleCreateRsp{
+	PB_RESULT_CODE Result = 1;
+}
+
+message GetRoleListRsp {
+	PB_RESULT_CODE Result = 1;
+	repeated int32 RoleIDs = 2;
+}
+
+message GetRoleDataReq {
+	int32 RoleID = 1;
+}
+
+message GetRoleDataRsp {
+	PB_RESULT_CODE Result = 1;
+	PBRoleData Data = 2;
+}
+
+//-----------------金钱----------------------
+
+message UpdateMoneyRsp {
+	PB_RESULT_CODE Result = 1;
+	int32 Money = 2;
+}
+
+//------------------背包------------------------
+
+message UpdateBagListRsp {
+	PB_RESULT_CODE Result = 1;
+	repeated PBBagItem Items = 2;
+}
+//------------------商店-------------------------
+
+message PBShopItem {
+	int32  Id    = 1;
+	int32  Price = 2;
+    sint32 PersonalLimitMaxCount = 3;
+	sint32 PersonalLimitCount    = 4;		//个人可购买数量 -1 -> 不限量
+    sint32 GlobalLimitMaxCount   = 5;
+	sint32 GlobalLimitCount      = 6;		//全服可购买数量 -1 -> 不限量
+	sint64 StartTime = 7;				    //开始时间戳 
+	sint64 EndTime   = 8;				    //结束时间戳 开始时间戳和结束时间戳均为-1表示不限时，永久有效
+}
+
+message UpdateShopListRsp {
+	PB_RESULT_CODE Result = 1;
+	repeated PBShopItem Items = 2;
+}
+//-------------------角色购买---------------------
+
+message RoleBuyItemReq {
+	int32 ItemID = 1;
+	int32 ItemCount = 2;
+}
+
+message RoleBuyItemRsp {
+	PB_RESULT_CODE Result = 1;
+}
+
+//--------------------移动同步-----------------------
+
+message PBRoleMoveSyncData {
+	int32 RoleID   = 1;
+	PBRoleStatus status = 2;
+}
+
+message RoleMoveSyncReq {
+	PBRoleMoveSyncData status = 1;
+}
+
+message RoleMoveSyncRsp{
+	PB_RESULT_CODE Result = 1;
+}
+
+message PBScale{
+	double X = 1;
+	double Y = 2;
+}
+
+message CubeTransformInfo{
+	int32 ID = 1;
+	PBPosition Pos = 2;
+	PBRotation Rot = 3;
+	PBScale Scale = 4;
+}
+
+// 进入场景
+message EnterSceneReq{
+	int32 SceneID = 1;
+}
+
+message EnterSceneRsp {  //玩家上线回应
+	PB_RESULT_CODE Result = 1;
+}
+
+message ExitSceneAnnounce{
+	repeated int32 RoleIds = 1;
+	repeated int32 CubeIds = 2;
+}
+
+message SceneSyncAnnounce{
+	repeated PBRoleMoveSyncData Datas = 1;
+	repeated CubeTransformInfo cubeInfos = 2;
+}

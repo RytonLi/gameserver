@@ -1,0 +1,3 @@
+﻿  FileIOServer.cpp
+d:\mygameserver\servicemgr\fileioserver\fileioserver.cpp(180): warning C4244: “参数”: 从“ssize_t”转换到“uv_file”，可能丢失数据
+  ServiceMgr.vcxproj -> D:\MyGameServer\x64\Release\ServiceMgr.lib

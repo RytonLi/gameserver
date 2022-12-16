@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="FileIOServer">
+      <UniqueIdentifier>{7b6e78bf-506f-4968-8554-cc0742d9542f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{8d767463-4fc3-4337-ae17-cf88301ced6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{dd5c6d0c-7cdb-434b-aac2-532a815ff885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Service">
+      <UniqueIdentifier>{092b864a-26af-4d32-a80f-ef970599d869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServiceMgr">
+      <UniqueIdentifier>{648bf4c2-f7b9-49fa-a23b-2afaeaa79307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TcpServer">
+      <UniqueIdentifier>{4bbdc1dc-f7d3-486c-b85c-7f623fed9e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{11b3c52c-a60e-4d05-b51f-58a9daa5e3b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UVLoop">
+      <UniqueIdentifier>{320272c4-8bb4-49f8-8b05-81b7527514ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UVSignalMgr">
+      <UniqueIdentifier>{36821ede-fcb8-428b-99d8-dd03fcf178f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UVTimerMgr">
+      <UniqueIdentifier>{9341eeab-c530-4474-a401-8568f07c9a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UVInclude">
+      <UniqueIdentifier>{7c45b5e0-0fbf-4bdd-b8fb-e8f050f07f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UVInclude\uv">
+      <UniqueIdentifier>{fc2245e9-b455-4134-87ef-3352a65fc0ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileIOServer\FileIOServer.cpp">
+      <Filter>FileIOServer</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIOServer\UVFile.cpp">
+      <Filter>FileIOServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Log\Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\ModuleMgr.cpp">
+      <Filter>Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\Service.cpp">
+      <Filter>Service</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceMgr\ServiceMgr.cpp">
+      <Filter>ServiceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpServer\Session.cpp">
+      <Filter>TcpServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpServer\TcpServer.cpp">
+      <Filter>TcpServer</Filter>
+    </ClCompile>
+    <ClCompile Include="UVLoop\UVLoop.cpp">
+      <Filter>UVLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="UVSignalMgr\UVSignalMgr.cpp">
+      <Filter>UVSignalMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="UVTimerMgr\UVTimerMgr.cpp">
+      <Filter>UVTimerMgr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileIOServer\FileIOServer.h">
+      <Filter>FileIOServer</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIOServer\UVFile.h">
+      <Filter>FileIOServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IModule.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\INetwork.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\ISingleton.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Log\Log.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\ModuleMgr.h">
+      <Filter>Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\Service.h">
+      <Filter>Service</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceMgr\ServiceMgr.h">
+      <Filter>ServiceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpServer\Session.h">
+      <Filter>TcpServer</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpServer\TcpServer.h">
+      <Filter>TcpServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Define.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UVLoop\UVLoop.h">
+      <Filter>UVLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="UVSignalMgr\UVSignalMgr.h">
+      <Filter>UVSignalMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="UVTimerMgr\UVTimerMgr.h">
+      <Filter>UVTimerMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv.h">
+      <Filter>UVInclude</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\aix.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\bsd.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\darwin.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\errno.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\linux.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\os390.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\posix.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\sunos.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\threadpool.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\tree.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\unix.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\version.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+    <ClInclude Include="UVInclude\uv\win.h">
+      <Filter>UVInclude\uv</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

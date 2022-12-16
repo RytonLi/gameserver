@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cJSON\cJSON.c" />
+    <ClCompile Include="Codec\Codec.cpp" />
+    <ClCompile Include="FileDB\FileDB.cpp" />
+    <ClCompile Include="FileDB\PlayerDataConvert.cpp" />
+    <ClCompile Include="FileDB\PlayerSaveData.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="LoginMgr\LoginMgr.cpp" />
+    <ClCompile Include="NetMgr\ClientInfo.cpp" />
+    <ClCompile Include="NetMgr\NetMgr.cpp" />
+    <ClCompile Include="NetPackDispatcher\NetPackDispatcher.cpp" />
+    <ClCompile Include="Proto\player.pb.cc" />
+    <ClCompile Include="RoleMgr\Role.cpp" />
+    <ClCompile Include="RoleMgr\RoleMgr.cpp" />
+    <ClCompile Include="SceneMgr\AOI.cpp" />
+    <ClCompile Include="SceneMgr\Cube.cpp" />
+    <ClCompile Include="SceneMgr\Grid.cpp" />
+    <ClCompile Include="SceneMgr\Scene.cpp" />
+    <ClCompile Include="SceneMgr\SceneMgr.cpp" />
+    <ClCompile Include="SceneMgr\SceneRole.cpp" />
+    <ClCompile Include="ShopMgr\ShopMgr.cpp" />
+    <ClCompile Include="Utils\TimeStampConvert.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cJSON\cJSON.h" />
+    <ClInclude Include="Codec\Codec.h" />
+    <ClInclude Include="Codec\Packet.h" />
+    <ClInclude Include="DataStruct\PlayerData.h" />
+    <ClInclude Include="FileDB\FileDB.h" />
+    <ClInclude Include="FileDB\PlayerDataConvert.h" />
+    <ClInclude Include="FileDB\PlayerSaveData.h" />
+    <ClInclude Include="LoginMgr\LoginMgr.h" />
+    <ClInclude Include="LoginMgr\LoginPlayerInfo.h" />
+    <ClInclude Include="NetMgr\ClientInfo.h" />
+    <ClInclude Include="NetMgr\NetMgr.h" />
+    <ClInclude Include="NetPackDispatcher\NetPackDispatcher.h" />
+    <ClInclude Include="Proto\player.pb.h" />
+    <ClInclude Include="RoleMgr\Role.h" />
+    <ClInclude Include="RoleMgr\RoleMgr.h" />
+    <ClInclude Include="SceneMgr\AOI.h" />
+    <ClInclude Include="SceneMgr\Cube.h" />
+    <ClInclude Include="SceneMgr\Entity.h" />
+    <ClInclude Include="SceneMgr\Grid.h" />
+    <ClInclude Include="SceneMgr\Scene.h" />
+    <ClInclude Include="SceneMgr\SceneConfig.h" />
+    <ClInclude Include="SceneMgr\SceneMgr.h" />
+    <ClInclude Include="SceneMgr\SceneRole.h" />
+    <ClInclude Include="ShopMgr\ShopItem.h" />
+    <ClInclude Include="ShopMgr\ShopMgr.h" />
+    <ClInclude Include="Utils\Define.h" />
+    <ClInclude Include="Utils\TimeStampConvert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Proto\player.proto" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DBED11A4-3CB5-4263-93CA-9D324414330F}</ProjectGuid>
+    <RootNamespace>GameService</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../ServiceMgr/include;./;./3rd/include/protobuf/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>../x64/Debug;./3rd/lib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ServiceMgrd.lib;libprotobufd.lib;Ws2_32.lib;Psapi.lib;Iphlpapi.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

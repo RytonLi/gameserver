@@ -1,0 +1,11 @@
+{
+  "gameservice": {
+    "ip": "0.0.0.0",
+    "port": 8888
+  },
+  "httpservice": {
+    "ip": "0.0.0.0",
+    "port": 80
+  },
+  "framerate": 30
+}
